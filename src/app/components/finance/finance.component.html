@@ -1,0 +1,386 @@
+<div class="body-app">
+    <app-nav></app-nav>
+    <!-- Modal-viewer -->
+    <!-- Modal-viewer -->
+    <div class="modal-viewer" (click)="hiddeModal()">
+        <div class="modal-content-viewer" (click)="stop($event)">
+            <div class="modal-vw-profil">
+                <img src="../../../assets/ressources/avatar/man.png" alt="">
+            </div>
+
+            <div class="modal-vw-body">
+                <div class="modal-vw-title">
+                    <h2>Anastacia leanca</h2>
+                    <h3>30 avril 09 : 30 - <span> 10 : 30</span></h3>
+
+                    <div class="times-wait">
+                        <span class="time-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.2498 12.0005C21.2498 17.1095 17.1088 21.2505 11.9998 21.2505C6.8908 21.2505 2.7498 17.1095 2.7498 12.0005C2.7498 6.89149 6.8908 2.75049 11.9998 2.75049C17.1088 2.75049 21.2498 6.89149 21.2498 12.0005Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4314 14.9429L11.6614 12.6939V7.84689" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span>dans 3h40"</span>
+                    </div>
+
+                    <div class="modal-vw-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, totam delectus eum,
+                            necessitatibus ipsum consectetur incidunt beatae atque quos dolorum, recusandae architecto
+                            dolor enim dolores. Magni facilis tempore iste reiciendis?</p>
+
+                    </div>
+
+                    <div class="modal-vw-btn">
+                        <button (click)="hiddeModal()">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal-viewer -->
+    <!-- Modal-viewer -->
+
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <div class="wrapper-head padding-5">
+                <div class="w-title">
+                    <h1>Finance</h1>
+                </div>
+                <div class="w-icons">
+                    <a routerLink="#" class="icon-h">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a routerLink="#" class="icon-h">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.50083 13.7871V13.5681C3.53295 12.9202 3.7406 12.2925 4.10236 11.7496C4.7045 11.0975 5.1167 10.2983 5.29571 9.43598C5.29571 8.7695 5.29571 8.0935 5.35393 7.42703C5.65469 4.21842 8.82728 2 11.9611 2H12.0387C15.1725 2 18.345 4.21842 18.6555 7.42703C18.7137 8.0935 18.6555 8.7695 18.704 9.43598C18.8854 10.3003 19.2972 11.1019 19.8974 11.7591C20.2618 12.2972 20.4698 12.9227 20.4989 13.5681V13.7776C20.5206 14.648 20.2208 15.4968 19.6548 16.1674C18.907 16.9515 17.8921 17.4393 16.8024 17.5384C13.607 17.8812 10.383 17.8812 7.18762 17.5384C6.09914 17.435 5.08576 16.9479 4.33521 16.1674C3.778 15.4963 3.48224 14.6526 3.50083 13.7871Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M9.55493 20.8518C10.0542 21.4784 10.7874 21.884 11.5922 21.9787C12.3971 22.0734 13.2072 21.8495 13.8433 21.3564C14.0389 21.2106 14.2149 21.041 14.3672 20.8518"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="balance">
+                <div class="balance-content">
+                    <div class="money gain">
+                        <div class="money-icon gain-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496.2 496.2"
+                                style="enable-background:new 0 0 496.2 496.2;" xml:space="preserve">
+                                <path style="fill:#25B7D3;" d="M496.2,248.1C496.2,111.1,385.1,0,248.1,0S0,111.1,0,248.1s111.1,248.1,248.1,248.1
+	S496.2,385.1,496.2,248.1z" />
+                                <path style="fill:#B7CAC4;" d="M412.6,177.8L250.4,96.7l-160,81.1c0,2.2,0,15.6,0,17.7l162.2,86.7l160-86.7
+	C412.6,193.4,412.6,180,412.6,177.8z" />
+                                <path style="fill:#E1E1E1;" d="M412.6,186.9l-162.2-81.1l-160,81.1c0,2.2,0,15.6,0,17.7l162.2,86.7l160-86.7
+	C412.6,202.5,412.6,189.1,412.6,186.9z" />
+                                <polygon style="fill:#B7CAC4;"
+                                    points="90.3,203.4 412.3,203.4 393.9,257 253.8,292 201,286.9 " />
+                                <rect x="63.696" y="175.858"
+                                    transform="matrix(-0.4675 -0.884 0.884 -0.4675 73.9829 504.6817)"
+                                    style="fill:#B9EFBD;" width="250.602" height="108.401" />
+                                <g>
+                                    <path style="fill:#71AD71;" d="M202,360.1l-113.2-214l87.1-46.1l113.2,214L202,360.1z M285.8,313.3L174.7,103.1l-82.6,43.7
+		L203.3,357L285.8,313.3z" />
+                                    <path style="fill:#71AD71;" d="M208.9,267.8c20.9-11,28.9-36.9,17.8-57.8c-11-20.9-36.9-28.9-57.8-17.8
+		c-20.8,11.1-28.8,36.9-17.8,57.8C162.2,270.9,188.1,278.9,208.9,267.8z" />
+                                </g>
+                                <path style="fill:#63BD6E;" d="M211.2,217c-1.4-1.8-3.2-2.9-5.4-3.2s-4.3,0.1-6.5,1.2c-2.1,1.1-3.6,2.6-4.6,4.3
+	c-0.9,1.7-1.2,4-0.8,6.8L211.2,217z M169.9,242.8c1.3,1.8,3.3,3,5.8,3.3c2.5,0.4,5.1-0.2,7.7-1.6c2.3-1.2,3.8-2.6,4.7-4.3
+	c0.9-1.6,1.1-4.1,0.7-7.5L169.9,242.8z" />
+                                <rect x="91.601" y="164.722"
+                                    transform="matrix(-0.2402 -0.9707 0.9707 -0.2402 56.4872 482.0544)"
+                                    style="fill:#B9EFBD;" width="250.594" height="108.398" />
+                                <g>
+                                    <path style="fill:#71AD71;" d="M198.1,348.3l-58.1-235l95.7-23.7l58.1,235L198.1,348.3z M290.7,323.2L233.6,92.3l-90.7,22.4
+		L200,345.6L290.7,323.2z" />
+                                    <path style="fill:#71AD71;" d="M227.1,260.5c22.9-5.7,36.9-28.9,31.2-51.8c-5.7-22.9-28.9-36.9-51.8-31.2
+		c-22.9,5.7-36.9,28.9-31.3,51.8C181,252.2,204.2,266.2,227.1,260.5z" />
+                                </g>
+                                <path style="fill:#63BD6E;" d="M241.6,211.7c-1-2.1-2.5-3.6-4.5-4.4c-2-0.8-4.2-1-6.6-0.4c-2.3,0.6-4.1,1.6-5.5,3.1
+	c-1.3,1.5-2.1,3.6-2.4,6.4L241.6,211.7z M195.3,226.7c0.9,2.1,2.5,3.7,4.8,4.6c2.3,0.9,5,1.1,7.9,0.3c2.5-0.6,4.3-1.6,5.6-3
+	c1.2-1.4,2.1-3.8,2.5-7.1L195.3,226.7z" />
+                                <rect x="191.9" y="89.9" style="fill:#B9EFBD;" width="108.4" height="250.6" />
+                                <g>
+                                    <path style="fill:#71AD71;"
+                                        d="M196.8,336.3V94.2h98.5v242.1H196.8z M292.8,334.1V96.3h-93.4v237.8H292.8z" />
+                                    <path style="fill:#71AD71;" d="M246.1,258c23.6,0,42.8-19.1,42.8-42.8s-19.2-42.8-42.8-42.8s-42.8,19.1-42.8,42.8
+		S222.4,258,246.1,258z" />
+                                </g>
+                                <path style="fill:#63BD6E;"
+                                    d="M271.8,214.1c-0.4-2.3-1.5-4-3.3-5.4c-1.8-1.3-3.9-2-6.3-2s-4.4,0.6-6,1.7c-1.6,1.1-2.9,3-3.9,5.7
+	H271.8z M223.3,217.6c0.3,2.3,1.5,4.1,3.6,5.6c2,1.5,4.6,2.2,7.5,2.2c2.6,0,4.6-0.5,6.2-1.6c1.5-1,2.9-3.1,4.2-6.3h-21.5V217.6z" />
+                                <rect x="152.905" y="165.324"
+                                    transform="matrix(0.2657 -0.9641 0.9641 0.2657 -7.3432 429.4117)"
+                                    style="fill:#B9EFBD;" width="250.611" height="108.405" />
+                                <g>
+                                    <path style="fill:#71AD71;" d="M198.6,323.1l64.3-233.4l95,26.2l-64.3,233.4L198.6,323.1z M291.7,346.5l63.2-229.3l-90.1-24.8
+		l-63.2,229.3L291.7,346.5z" />
+                                    <path style="fill:#71AD71;" d="M266.9,260.7c22.8,6.3,46.3-7.1,52.6-29.9c6.3-22.8-7.1-46.3-29.9-52.6s-46.3,7.1-52.6,29.9
+		C230.7,230.9,244.1,254.4,266.9,260.7z" />
+                                </g>
+                                <path style="fill:#63BD6E;" d="M303.4,225.2c0.2-2.3-0.4-4.3-1.8-6s-3.2-2.9-5.5-3.6c-2.3-0.6-4.4-0.6-6.3,0s-3.6,2.1-5.2,4.4
+	L303.4,225.2z M255.6,215.7c-0.3,2.3,0.4,4.4,1.9,6.4c1.6,2,3.8,3.4,6.7,4.1c2.5,0.7,4.6,0.7,6.3,0.1c1.8-0.6,3.7-2.2,5.7-5
+	L255.6,215.7z" />
+                                <rect x="180.02" y="176.924"
+                                    transform="matrix(0.4872 -0.8733 0.8733 0.4872 -45.2688 385.1565)"
+                                    style="fill:#B9EFBD;" width="250.602" height="108.401" />
+                                <g>
+                                    <path style="fill:#71AD71;" d="M203.4,312.8l118-211.4l86.1,48l-118,211.4L203.4,312.8z M288.2,357.7L404.1,150l-81.6-45.5
+		L206.6,312.2L288.2,357.7z" />
+                                    <path style="fill:#71AD71;" d="M284.5,268.4c20.6,11.5,46.7,4.1,58.2-16.5s4.1-46.7-16.5-58.2s-46.7-4.1-58.2,16.5
+		C256.5,230.9,263.9,256.9,284.5,268.4z" />
+                                </g>
+                                <path style="fill:#B9EFBD;" d="M274.7,212.7l6.1,3.4c1.8-2.3,3.6-4,5.5-5.1c1.9-1,4.2-1.5,7.1-1.5c2.8,0.1,5.9,0.9,9.2,2.5l-1.7,5.7
+	c-3.5-1.4-6.3-2.1-8.4-2c-3,0.2-5.2,1.3-6.5,3.1l19.5,10.9c1.6-1.8,3.8-3.4,6.5-4.8c2-1,4.2-1.4,6.6-1.2s4.9,1,7.3,2.4
+	c4.4,2.4,7.2,5.7,8.5,9.7c0.8,2.8,0.5,5.9-0.9,9.5l2.9,1.6l-1.7,3l-2.9-1.6c-2,2.7-4.4,4.5-7.1,5.3c-3.5,1-7.3,0.6-11.5-1.1l2-5.8
+	c2.6,1,4.8,1.4,6.6,1.2c1.8-0.2,3.4-1.1,4.7-2.5l-17.7-9.9c-2.2,2.1-3.7,3.5-4.7,4.1c-1.7,1.1-3.5,1.8-5.2,2.2
+	c-1.8,0.3-3.6,0.3-5.6-0.1c-2-0.4-3.9-1.1-5.8-2.2c-4.3-2.4-7.2-5.5-8.8-9.3c-1.6-3.8-1.5-7.6,0.3-11.3l-6.2-3.5L274.7,212.7z
+	 M328.4,242.7c0.7-2.2,0.6-4.3-0.3-6.3s-2.4-3.6-4.5-4.8s-4.1-1.7-6.1-1.5s-4,1.2-6.1,3.1L328.4,242.7z M284.3,222
+	c-0.8,2.1-0.7,4.3,0.4,6.6s2.9,4.2,5.5,5.6c2.2,1.2,4.3,1.8,6.1,1.6c1.9-0.2,4.1-1.3,6.7-3.5L284.3,222z" />
+                                <path style="fill:#EDEDED;" d="M90.4,203.3v153.1c0,8,6.5,14.4,14.4,14.4h293.3c8,0,14.4-6.5,14.4-14.4l-0.3-153.3l-159.8,87.7
+	L90.4,203.3" />
+                                <g>
+                                    <path style="fill:#E5E5E5;"
+                                        d="M252.6,291.3l159.5-87.2l0.3,152.2c0,8-6.5,14.5-14.5,14.5L252.6,291.3z" />
+                                    <path style="fill:#E5E5E5;"
+                                        d="M90.3,203.4l163.5,88l-149.1,78.9c-8,0-14.5-6.5-14.5-14.5L90.3,203.4z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="money-text">
+                            <h2>Revenus</h2>
+                            <h1>2000$</h1>
+                        </div>
+                    </div>
+
+                    <div class="money expense">
+                        <div class="money-icon expen-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496.2 496.2"
+                                style="enable-background:new 0 0 496.2 496.2;" xml:space="preserve">
+                                <path style="fill:#334D5C;" d="M0,248.1C0,111.1,111.1,0,248.1,0s248.1,111.1,248.1,248.1S385.1,496.2,248.1,496.2S0,385.1,0,248.1z
+	" />
+                                <g>
+                                    <path style="fill:#67AEBA;" d="M240.4,68.9c-10.3,10.3-20.7,20.7-31,31c-6.6,6.5-1.7,18.3,7.5,18.3c5.2,0,10.3,0,15.5,0
+		c-0.3,1.3-0.5,2.7-0.5,4.2c0,9.9,0,19.8,0,29.7c0,20.8,32.2,21,32.2,0.2c0-9.9,0-19.8,0-29.7c0-1.6-0.2-3-0.6-4.4
+		c4.8,0,9.5,0,14.3,0c0.7,0.1,1.3,0,2,0c4.6-0.3,7.6-3.1,8.9-6.5c1.7-3.4,1.6-7.5-1.5-11.1c-0.4-0.6-0.9-1.1-1.5-1.6
+		c-10-10-20.1-20.1-30.1-30.1C251.5,64.7,244.6,64.8,240.4,68.9z" />
+                                    <path style="fill:#67AEBA;" d="M430.8,189.8H65.4c-2.1,0-3.8,1.7-3.8,3.8v64c0,2.1,1.7,3.8,3.8,3.8h365.4c2.1,0,3.8-1.7,3.8-3.8
+		v-64C434.6,191.5,432.9,189.8,430.8,189.8z" />
+                                </g>
+                                <rect x="84.8" y="208.6" style="fill:#4B868C;" width="326.7" height="34" />
+                                <rect x="93.2" y="208.6" style="fill:#B9EFBD;" width="309.8" height="97.8" />
+                                <path style="fill:#A5DBA7;" d="M93.2,208.6V239h309.9v-30.4H93.2z" />
+                                <path style="fill:#91C691;" d="M93.2,208.6v11.1h309.9v-11.1H93.2z" />
+                                <polygon style="fill:#71AD71;" points="397.7,300.3 397.7,208.6 395.1,208.6 395.1,297.1 101.1,297.1 101.1,208.6 98.5,208.6 
+	98.5,300.3 " />
+                                <g>
+                                    <rect x="98.5" y="208.6" style="fill:#598E59;" width="2.7" height="30.4" />
+                                    <rect x="395.1" y="208.6" style="fill:#598E59;" width="2.7" height="30.4" />
+                                    <rect x="98.5" y="219.7" style="fill:#598E59;" width="2.7" height="19.3" />
+                                </g>
+                                <rect x="98.5" y="208.6" style="fill:#4F7F4F;" width="2.7" height="11.1" />
+                                <rect x="395.1" y="219.7" style="fill:#598E59;" width="2.7" height="19.3" />
+                                <rect x="395.1" y="208.6" style="fill:#4F7F4F;" width="2.7" height="11.1" />
+                                <g>
+                                    <path style="fill:#71AD71;" d="M248.1,292.3c29.2,0,52.9-23.7,52.9-52.9c0-11.5-3.7-22.1-9.9-30.8h-86c-6.2,8.7-9.9,19.3-9.9,30.8
+		C195.2,268.6,218.9,292.3,248.1,292.3z" />
+                                    <path style="fill:#71AD71;"
+                                        d="M291,208.6h-85.9l0,0H291C291.1,208.6,291.1,208.6,291,208.6z" />
+                                </g>
+                                <path style="fill:#598E59;"
+                                    d="M205.1,208.6c-6.2,8.6-9.8,19.1-9.9,30.4h105.7c-0.1-11.3-3.7-21.8-9.9-30.4H205.1z" />
+                                <path style="fill:#4F7F4F;"
+                                    d="M205.1,208.6c-2.4,3.4-4.5,7.1-6.1,11.1h98.1c-1.6-4-3.6-7.7-6.1-11.1H205.1z" />
+                                <path style="fill:#71AD71;" d="M258,263.2c1.8-2.5,2.8-5.6,2.8-9.3c0-3.2-0.6-5.7-1.9-7.6s-3.9-3.6-7.8-5.1v26.5
+	C253.8,267.2,256.1,265.7,258,263.2z" />
+                                <path style="fill:#86BC88;" d="M256.6,211.2c1.3,1.8,2.2,4.4,2.7,7.9l7.5-1.3c-0.4-3.6-1.4-6.7-2.9-9.2h-10.5
+	C254.6,209.2,255.7,210.1,256.6,211.2z" />
+                                <path style="fill:#B9EFBD;" d="M232.3,229.4c1.2,2.7,3,4.9,5.3,6.4c3.1,2.1,6.2,3.5,9.1,4.1v27.6c-2.9-0.3-5.3-2-7.3-5.1
+	c-1.4-2.2-2.4-5.7-3-10.3l-7.2,1.6c0.3,4.5,1.2,8.4,2.9,11.5s3.6,5.3,5.8,6.8c2.2,1.4,5.2,2.4,8.8,2.9v8.7h4.3v-8.8
+	c5-0.3,9.2-2.4,12.3-6.4c3.2-4,4.8-9,4.8-15.1c0-2.7-0.4-5.2-1.2-7.6c-0.8-2.3-1.9-4.4-3.2-6.1c-1.4-1.7-3.2-3.2-5.5-4.4
+	c-1.2-0.7-3.6-1.5-7.2-2.6v-24.1h-4.3v23.1c-3.3-1.2-5.6-2.8-7-4.8s-2.1-4.5-2.1-7.5s0.8-5.5,2.4-7.7c1-1.3,2.2-2.4,3.6-3.1h-10.4
+	c-1.9,3.2-2.8,7.1-2.8,11.5C230.4,223.6,231.1,226.7,232.3,229.4z M251,241.1c3.9,1.5,6.5,3.2,7.8,5.1c1.3,1.9,1.9,4.4,1.9,7.6
+	c0,3.7-0.9,6.8-2.8,9.3c-1.8,2.5-4.2,4-7,4.4v-26.4H251z" />
+                                <g>
+                                    <path style="fill:#91C691;" d="M233.3,208.6H93.2l0,0H233.3L233.3,208.6z" />
+                                    <path style="fill:#91C691;" d="M246.7,208.6L246.7,208.6h-3c0,0,0,0-0.1,0H246.7z" />
+                                </g>
+                                <path style="fill:#B9EFBD;" d="M246.7,239.9v27.6c-2.9-0.3-5.3-2-7.3-5.1c-1.4-2.2-2.4-5.7-3-10.3l-7.2,1.6
+	c0.3,4.5,1.2,8.4,2.9,11.5s3.6,5.3,5.8,6.8c2.2,1.4,5.2,2.4,8.8,2.9v8.7h4.3v-8.8c5-0.3,9.2-2.4,12.3-6.4c3.2-4,4.8-9,4.8-15.1
+	c0-2.7-0.4-5.2-1.2-7.6c-0.8-2.3-1.9-4.4-3.2-6.1c-0.2-0.2-0.4-0.4-0.6-0.7h-19.5C244.7,239.4,245.7,239.7,246.7,239.9z M251,241.1
+	c3.9,1.5,6.5,3.2,7.8,5.1c1.3,1.9,1.9,4.4,1.9,7.6c0,3.7-0.9,6.8-2.8,9.3c-1.8,2.5-4.2,4-7,4.4v-26.4H251z" />
+                                <path style="fill:#A0D8A3;" d="M258.2,235.3c-1.2-0.7-3.6-1.5-7.2-2.6v-13h-4.3v11.9c-3.3-1.2-5.6-2.8-7-4.8c-1.3-1.9-2-4.3-2-7.2
+	h-7.2c0,0.1,0,0.3,0,0.4c0,3.5,0.6,6.6,1.9,9.3c1.2,2.7,3,4.9,5.3,6.4c2.1,1.4,4.1,2.4,6,3.2h19.4
+	C261.8,237.6,260.2,236.3,258.2,235.3z" />
+                                <path style="fill:#B9EFBD;"
+                                    d="M243.6,208.6C243.7,208.6,243.7,208.6,243.6,208.6h-10.4l0,0H243.6z" />
+                                <g>
+                                    <rect x="246.7" y="208.6" style="fill:#86BC88;" width="4.3" height="11.1" />
+                                    <path style="fill:#86BC88;" d="M240.1,211.6c1-1.3,2.1-2.3,3.5-3h-10.4c-1.8,3.1-2.7,6.8-2.8,11.1h7.2c0-0.1,0-0.2,0-0.3
+		C237.7,216.4,238.5,213.8,240.1,211.6z" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="money-text">
+                            <h2>Dépences</h2>
+                            <h1>2000$</h1>
+                        </div>
+                    </div>
+
+                    <div class="btn-balance">
+                        <button>
+                            <span class="plus-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"
+                                    fill="currentColor">
+                                    <line x1="256" y1="112" x2="256" y2="400"
+                                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                    <line x1="400" y1="256" x2="112" y2="256"
+                                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="balance-box">
+                    <div class="balance-card">
+                        <div class="title-default">
+                            <h2>Liste des revenus</h2>
+                        </div>
+
+                        <div class="bal-card-1">
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">1</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">2</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">3</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">320</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+
+                            
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">150</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+
+                            
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">455</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="balance-card">
+                        <div class="title-default">
+                            <h2>Liste des dépences</h2>
+                        </div>
+
+                        <div class="bal-card-1">
+                            <div class="list-bal">
+                                <div class="list-text">
+                                    <div class="id">455</div>
+                                    <div class="text">
+                                        <span>Lorem, ipsum dolor.</span>
+                                        <span class="date"> 29, avr 2022 10:28</span>
+                                    </div>
+                                </div>
+                                <div class="amount"><span>200 $</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

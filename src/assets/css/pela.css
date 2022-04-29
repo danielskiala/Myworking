@@ -1,0 +1,1180 @@
+@media screen and (max-width: 1366px) {
+  .padding-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .wrapper {
+    margin-left: 80px;
+    position: relative;
+  }
+
+  .wrapper .wrapper-content {
+    padding: 0px 10px 40px;
+  }
+
+  .wrapper-content .wrapper-head {
+    width: 100%;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wrapper-content .wrapper-head .w-title h1 {
+    font-family: "Montserrat-Extra";
+  }
+
+  .wrapper-content .wrapper-head .w-icons {
+    display: flex;
+    align-items: center;
+    align-items: center;
+  }
+
+  .wrapper-content .wrapper-head .w-icons .icon-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    line-height: 0px;
+    border-radius: 4px;
+    color: inherit;
+    background: var(--color-grey-second);
+    position: relative;
+  }
+
+  .wrapper-content .wrapper-head .w-icons .icon-h svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .wrapper-content .wrapper-head .w-icons .icon-h:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .wrapper-content .wrapper-head .w-icons .icon-h:nth-child(2):after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    background: #e75656;
+    border-radius: 50%;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-add-default {
+    margin-bottom: 20px;
+  }
+
+  .btn-add-default button {
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    background: var(--color-blue-pela);
+    color: #fff;
+    border-radius: 4px;
+    font-family: "Montserrat-Bold";
+  }
+  /**
+     *
+     * Wrapper Illustration
+     *
+     */
+
+  .wrapper-illustration {
+    width: 100%;
+  }
+
+  .wrapper-illustration .illustration {
+    width: 580px;
+    padding: 20px 30px;
+    background: var(--color-orange-pela);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .wrapper-illustration .illustration h1 {
+    font-family: "Montserrat-Regular";
+  }
+
+  .wrapper-illustration .illustration p {
+    margin-top: 10px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+
+  .wrapper-illustration .illustration .illust-img {
+    background: url("../ressources/svg/illustration/Stay-at-home-pana.svg")
+      no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: -77px;
+    right: 0px;
+  }
+
+  /*=====  End of Wrapper Illustration  ======*/
+
+  /**
+     *
+     * Statis
+     *
+     */
+
+  .statis {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .statis .statis-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .statis-content .stat-card {
+    width: calc(calc(100% / 3) - 10px);
+    margin: 0 5px 20px;
+    background: var(--color-white);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+
+  .statis-content .stat-card .stat-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .statis-content .stat-card .stat-head .stat-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .statis-content .stat-card .stat-head .number {
+    font-family: "Imprima-Regular";
+  }
+  .statis-content .stat-card .stat-body {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .statis-content .stat-card .stat-body p {
+    margin-bottom: 0;
+    font-family: "Montserrat-Bold";
+    font-size: 17px;
+  }
+
+  .blue-opac .stat-icon {
+    color: #4f51f8;
+    background: #4f52f81f;
+  }
+
+  .blue-opac h1 {
+    color: #4f51f8;
+  }
+
+  .blue-opac .stat-body {
+    border-top: 1px solid #4f51f8 !important;
+  }
+
+  .orange-opac .stat-icon {
+    color: #ffc37c;
+    background: #ffc37c1f;
+  }
+
+  .orange-opac h1 {
+    color: #e68815;
+  }
+
+  .orange-opac .stat-body {
+    border-top: 1px solid #e68815 !important;
+  }
+
+  .sky-opac .stat-icon {
+    color: #4fbaf8;
+    background: #4fbaf81f;
+  }
+
+  .sky-opac h1 {
+    color: #4fbaf8;
+  }
+
+  .sky-opac .stat-body {
+    border-top: 1px solid #4fbaf8 !important;
+  }
+  /*=====  End of Section comment block  ======*/
+
+  /**
+   *
+   * Title-Default  
+   *
+   */
+
+  .title-default {
+    width: 100%;
+    margin: 20px 0 30px;
+  }
+
+  .title-default h2 {
+    font-family: "Montserrat-Extra";
+  }
+  /*=====  End of TItle-Default  ======*/
+
+  /**
+   *
+   * Meeting-Home
+   *
+   */
+  .meeting-home {
+    width: 100%;
+    position: relative;
+  }
+
+  .meeting-home .meeting-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .meeting-home .meeting-content .meet-card {
+    width: calc(calc(100% / 3) - 10px);
+    margin: 0 5px 20px;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content .mt-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content .mt-avatar img {
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content .mt-body {
+    width: 65%;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content .mt-body h3 {
+    font-family: "Montserrat-Bold";
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content .mt-body p {
+    margin-bottom: 10px;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-content .mt-body .mt-date {
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+  }
+
+  .meeting-home
+    .meeting-content
+    .meet-card
+    .meet-content
+    .mt-body
+    .mt-date
+    .icon-date {
+    margin-right: 5px;
+  }
+
+  .meeting-home
+    .meeting-content
+    .meet-card
+    .meet-content
+    .mt-body
+    .mt-date
+    svg {
+    color: var(--color-blue-pela);
+  }
+
+  .meeting-home
+    .meeting-content
+    .meet-card
+    .meet-content
+    .mt-body
+    .mt-date
+    label {
+    color: #e68815;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-btn {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-btn button {
+    border: none;
+    outline: none;
+    padding: 12px 14px;
+    border-radius: 10px;
+    width: 47%;
+    cursor: pointer;
+    font-family: "Montserrat-Bold";
+  }
+
+  .meeting-home .meeting-content .meet-card .meet-btn .see {
+    background: var(--color-blue-pela);
+    color: #fff;
+  }
+  /*=====  End of Meeting-Home  ======*/
+
+  /**
+   *
+   * Documents
+   *
+   */
+
+  .documents {
+    width: 100%;
+    position: relative;
+  }
+
+  .documents .docs-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .documents .docs-content .doc-card {
+    width: calc(calc(100% / 3) - 10px);
+    margin: 0 5px 20px;
+    padding: 20px 15px;
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .documents .docs-content .doc-card .icon-doc svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .documents .docs-content .doc-card .doc-body {
+    padding-left: 15px;
+  }
+
+  .documents .docs-content .doc-card .doc-body .title-doc {
+    margin-bottom: 10px;
+  }
+
+  .documents .docs-content .doc-card .doc-body .title-doc h4 {
+    font-family: "Montserrat-Regular";
+  }
+
+  .documents .docs-content .doc-card .doc-body .icons-doc {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .documents .docs-content .doc-card .doc-body .icons-doc a {
+    width: 40px;
+    height: 35px;
+    background: var(--color-blue-pela);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 4px;
+  }
+
+  .documents .docs-content .doc-card .doc-body .icons-doc a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .documents .docs-content .doc-card .doc-body .icons-doc a:nth-child(2) {
+    background: #e68815;
+  }
+  /*=====  End of Documents  ======*/
+
+  /**
+   *
+   * Modal
+   *
+   */
+
+  .modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.555);
+    z-index: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+
+  .modal .wrapper-modal {
+    background: var(--color-white);
+    width: 550px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.4s 0s;
+  }
+
+  .modal.active .wrapper-modal {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+  }
+
+  .modal .wrapper-modal .wrapper-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 10px;
+  }
+
+  .modal .wrapper-modal .wrapper-head .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal .wrapper-modal .wrapper-head .icon svg {
+    width: 40px;
+    height: 40px;
+    color: inherit;
+  }
+
+  .modal .wrapper-modal .modal-content {
+    width: 100%;
+    max-height: 480px;
+    overflow-y: auto;
+    padding: 30px;
+  }
+
+  /**
+   *
+   * Wrapper-form
+   *
+   */
+
+  .modal .wrapper-modal .wrapper-form {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .modal .wrapper-modal .wrapper-form .group-form {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .modal .wrapper-modal .wrapper-form .group-form label {
+    display: block;
+    font-family: "Montserrat-Bold";
+    margin-bottom: 8px;
+  }
+
+  .wrapper-modal .wrapper-form .group-form input,
+  .wrapper-modal .wrapper-form .group-form textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    padding: 12px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .wrapper-modal .wrapper-form .group-form input:focus,
+  .wrapper-modal .wrapper-form .group-form textarea:focus {
+    box-shadow: 0px 0px 3px #4f51f8;
+  }
+
+  .wrapper-modal .wrapper-form .group-form input[type="date"] {
+    appearance: none !important;
+  }
+
+  .wrapper-modal .wrapper-form .group-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper-modal .wrapper-form .group-inputs .group-form {
+    width: 48%;
+  }
+
+  .wrapper-modal .wrapper-form .form-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
+  .wrapper-modal .wrapper-form .form-btn button {
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    background: var(--color-blue-pela);
+    border-radius: 4px;
+    color: var(--color-white);
+    font-family: "Montserrat-Bold";
+    font-size: 15px;
+    position: relative;
+    display: block;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .wrapper-modal .wrapper-form .form-btn button.active {
+    background: #ece5e5;
+  }
+
+  .wrapper-modal .wrapper-form .form-btn button.active .text-btn {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .wrapper-modal .wrapper-form .form-btn button::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 48%);
+    background: url("../ressources/svg/loading/Ellipsis-1s-200px.svg") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .wrapper-modal .wrapper-form .form-btn button.active::after {
+    opacity: 1;
+  }
+
+  /**
+   *
+   * Select-icons
+   *
+   */
+
+  .icons-select {
+    width: 100%;
+    position: relative;
+  }
+
+  .icons-select .icons-label {
+    margin-bottom: 15px;
+  }
+
+  .icons-select .icons-label span {
+    font-family: "Montserrat-Bold";
+  }
+
+  .icons-select .icons-content {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .icons-select .icons-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .icons-select .icons-content .icons-box {
+    display: inline-flex;
+  }
+
+  .icons-select .icons-content .icon-card {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .icons-select .icons-content .icon-card:first-child {
+    border: 2px dashed #b4aeae;
+  }
+
+  .icons-select .icons-content .icon-card .circle-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons-select .icons-content .icon-card .circle-img svg {
+    width: 30px;
+    height: 30px;
+    color: #b4aeae;
+  }
+
+  .icons-select .icons-content .icon-card:last-child {
+    margin-right: 0;
+  }
+
+  .icons-select .icons-content .icon-card img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .icons-select .icons-content .icon-card .circle-icon-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .icons-select .icons-content .icon-card .circle-icon-check .check-icon {
+    display: block;
+    transform: scale(0.8);
+    transition: transform 0.3s 0.1s;
+  }
+
+  .icons-select .icons-content .icon-card .circle-icon-check svg {
+    color: #4f51f8;
+    width: 40px;
+    height: 40px;
+  }
+
+  .icons-select
+    .icons-content
+    .icon-card
+    input[type="radio"]:checked
+    ~ .circle-icon-check {
+    opacity: 1;
+  }
+
+  .icons-select
+    .icons-content
+    .icon-card
+    input[type="radio"]:checked
+    ~ .circle-icon-check
+    .check-icon {
+    transform: scale(1);
+  }
+
+  /**
+   *
+   * File-Card
+   *
+   */
+
+  .file-card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #4f51f8;
+    border: 3px dashed #b4aeae;
+    border-radius: 6px;
+  }
+
+  .file-card .file-icon {
+    display: block;
+  }
+
+  .file-card .file-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .file-card .label {
+    display: block;
+    margin-top: 10px;
+    font-family: "Montserrat-Bold";
+    font-size: 16px;
+  }
+
+  /*=====  End of Modal  ======*/
+
+  /**
+   *
+   * Modal-Viewer
+   *
+   */
+
+  .modal-viewer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.555);
+    z-index: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .modal-viewer.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+
+  .modal-viewer .modal-content-viewer {
+    width: 430px;
+    background: var(--color-white);
+    border-radius: 10px;
+    position: relative;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.4s 0s;
+  }
+
+  .modal-viewer.active .modal-content-viewer {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-profil {
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-profil img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body {
+    margin-top: 30px;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body h2 {
+    margin-bottom: 12px;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body .modal-vw-title h3 span {
+    color: #e68815;
+    letter-spacing: 2px;
+  }
+
+  .modal-viewer
+    .modal-content-viewer
+    .modal-vw-body
+    .modal-vw-title
+    .times-wait {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px 10px;
+    font-family: "Montserrat-Regular";
+    background: #4f51f8;
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  .modal-viewer
+    .modal-content-viewer
+    .modal-vw-body
+    .modal-vw-title
+    .times-wait
+    .time-icon {
+    margin-right: 8px;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body .modal-vw-desc {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body .modal-vw-desc p {
+    line-height: 20px;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body .modal-vw-btn {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .modal-viewer .modal-content-viewer .modal-vw-body .modal-vw-btn button {
+    border: none;
+    outline: none;
+    background: #e75656;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: "Montserrat-Bold";
+  }
+
+  /*=====  End of Modal-viewer  ======*/
+
+  /**
+   *
+   * Charts
+   *
+   */
+
+  .charts-bloc {
+    width: 100%;
+  }
+
+  .charts-bloc .chart-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .charts-bloc .chart-content .chart-box {
+    width: 49%;
+    height: 430px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .charts-bloc .chart-content .chart-box svg {
+    width: 100% !important;
+    height: 100% !important;
+    font-family: "Montserrat-Regular";
+  }
+
+  /*=====  End of Charts  ======*/
+
+  /**
+ *
+ * Balance
+ *
+ */
+
+  .balance {
+    width: 100%;
+    position: relative;
+    padding-bottom:50px;
+  }
+
+  .balance .balance-content {
+    width: 600px;
+    height: 250px;
+    position: relative;
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .balance .balance-content .money {
+    display: flex;
+    align-items: center;
+  }
+
+  .balance .balance-content .money .money-text {
+    margin-left: 20px;
+  }
+
+  .balance .balance-content .money .money-text h2 {
+    font-size: 25px;
+  }
+
+  .balance .balance-content .money .money-text h1 {
+    font-size: 25px;
+    margin-top: 8px;
+    font-family: "Imprima-Regular";
+  }
+
+  .balance .balance-content .money svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .balance .btn-balance {
+    position: absolute;
+    bottom: -44px;
+    right: 39px;
+    width: 100px;
+    height: 100px;
+    background: var(--color-grey-pela);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .balance .btn-balance button {
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 80px;
+    background: var(--color-blue-pela);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    box-shadow:0px 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .balance .btn-balance button svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .balance .balance-box{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+  }
+
+  .balance .balance-box .balance-card{
+    width:49%;
+  }
+
+  .balance .balance-box .balance-card .bal-card-1{
+    width:100%;
+    max-height:400px;
+    overflow:auto;
+    background:var(--color-white);
+    border-radius:var(--shadow);
+    border-radius:10px;
+  }
+
+  .balance .balance-box .balance-card .bal-card-1 .list-bal{
+    width:100%;
+    padding:20px 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:"Montserrat-Bold";
+  }
+
+  .balance .balance-box .balance-card .bal-card-1 .list-bal .list-text{
+    display:flex;
+    align-items:center;
+    font-size:15px;
+  }
+
+  .balance .balance-box .balance-card .bal-card-1 .list-bal .list-text .text{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .balance .balance-box .balance-card .bal-card-1 .list-bal .list-text .text .date{
+    font-family:"lato-Regular";
+    text-transform:capitalize;
+    margin-top:4px;
+  }
+
+  .balance .balance-box .balance-card .bal-card-1 .list-bal .list-text .id{
+    width:40px;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#4f51f8;
+    font-family: "Montserrat-Bold";
+    font-size:13px;
+    color:#fff;
+    margin-right:10px;
+  }
+
+  .balance .balance-box .balance-card .bal-card-1 .list-bal .amount span{
+    font-size:18px;
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  .statis-content .stat-card {
+    width: calc(calc(100% / 2) - 10px);
+  }
+
+  .meeting-home .meeting-content .meet-card {
+    width: calc(calc(100% / 2) - 10px);
+  }
+
+  .documents .docs-content .doc-card {
+    width: calc(calc(100% / 2) - 10px);
+  }
+
+  .charts-bloc .chart-content .chart-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .wrapper .wrapper-content {
+    margin-top: 80px;
+    padding: 0px 10px 90px;
+  }
+
+  .wrapper-content .wrapper-head .w-icons {
+    display: none;
+  }
+
+  .wrapper-illustration .illustration {
+    width: 100%;
+  }
+
+  .wrapper-illustration .illustration .illust-img {
+    display: none;
+  }
+
+  .statis-content .stat-card {
+    width: 100%;
+  }
+
+  .meeting-home .meeting-content .meet-card {
+    width: 100%;
+  }
+
+  .documents .docs-content .doc-card {
+    width: 100%;
+    margin: 0 0px 20px;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+
+  .modal .wrapper-modal {
+    background: var(--color-white);
+    width: 100%;
+  }
+
+  .modal-viewer {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .modal-viewer .modal-content-viewer {
+    width: 100%;
+  }
+
+  .balance .balance-content {
+    width:100%;
+    flex-wrap:wrap;
+    height:300px;
+  }
+
+  .balance .balance-box{
+    width:100%;
+    flex-wrap:wrap;
+    margin-top:50px;
+  }
+
+  .balance .balance-box .balance-card{
+    width:100%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 690px) {
+  .meeting-home .meeting-content .meet-card .meet-content .mt-avatar {
+    width: 30%;
+    height: 30%;
+  }
+}

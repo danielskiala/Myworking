@@ -1,0 +1,69 @@
+/**
+ *
+ * Imprima
+ *
+ */
+
+@font-face {
+  font-family: "Imprima-Regular";
+  src: url("../../assets/ressources/fonts/Imprima/Imprima-Regular.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+/**
+ *
+ * Montserrat
+ *
+ */
+
+@font-face {
+  font-family: "Montserrat-Extra";
+  src: url('../ressources/fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format("truetype");
+  font-display:swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url('../ressources/fonts/Montserrat/static/Montserrat-Bold.ttf') format("truetype");
+  font-display:swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url('../ressources/fonts/Montserrat/static/Montserrat-Regular.ttf') format("truetype"); 
+  font-display:swap;
+}
+/**
+ *
+ * Lato
+ *
+ */
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../../assets/ressources/fonts/Lato/Lato-Regular.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../../assets/ressources/fonts/Lato/Lato-Black.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../../assets/ressources/fonts/Lato/Lato-Bold.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../../assets/ressources/fonts/Lato/Lato-Light.ttf")
+    format("truetype");
+  font-display: swap;
+}

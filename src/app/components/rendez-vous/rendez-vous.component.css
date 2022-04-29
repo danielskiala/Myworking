@@ -1,0 +1,87 @@
+.meet-select{
+    width:100%;
+    margin-bottom:30px;
+    display:flex;
+    align-items:center;
+}
+
+.meet-select .meet-links{
+    display:flex;
+    align-items:center;
+    background:#4f52f81c;
+    padding:10px 10px;
+    border-radius:8px;
+}
+
+.meet-select .meet-links a{
+    display:block;
+    padding:9px 15px;
+    border-radius:8px;
+    margin-right:10px;
+    font-family:"Montserrat-Bold";
+    font-weight:500;
+    font-size:13px;
+    color:inherit;
+}
+
+.meet-select .meet-links a:hover,
+.meet-select .meet-links a.active{
+    background:var(--color-white);
+    box-shadow:var(--shadow);
+}   
+
+.meet-select .meet-links a:last-child{
+    margin-right:0;
+}
+
+.meet-select  .meet-add{
+    margin-left:20px;
+}
+
+.meet-select  .meet-add button{
+    outline:none;
+    border:none;
+    background:var(--color-white);
+    padding:13px 13px;
+    box-shadow:var(--shadow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+
+.meet-select  .meet-add button svg{
+    color:var(--color-blue-pela);
+}
+
+@media screen and (max-width:380px){
+    .meet-select{
+        flex-wrap:wrap;
+    } 
+
+    .meet-select .meet-links a{
+        padding:9px 10px;
+        margin-right:5px;
+    }
+    .meet-select  .meet-add{
+        margin-left:10px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .meet-select{
+        flex-wrap:wrap;
+    } 
+
+    .meet-select .meet-links{
+        margin-bottom:10px;
+    }
+
+    .meet-select .meet-links a{
+        padding:9px 10px;
+        margin-right:5px;
+    }
+    .meet-select  .meet-add{
+        margin-left:0px;
+    }
+}

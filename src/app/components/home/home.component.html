@@ -1,0 +1,682 @@
+<div class="body-app">
+    <app-nav></app-nav>
+    <!-- Modal-viewer -->
+    <!-- Modal-viewer -->
+    <div class="modal-viewer" (click)="hiddeModal()">
+        <div class="modal-content-viewer" (click)="stop($event)">
+            <div class="modal-vw-profil">
+                <img src="../../../assets/ressources/avatar/man.png" alt="">
+            </div>
+
+            <div class="modal-vw-body">
+                <div class="modal-vw-title">
+                    <h2>Anastacia leanca</h2>
+                    <h3>30 avril 09 : 30 - <span> 10 : 30</span></h3>
+
+                    <div class="times-wait">
+                        <span class="time-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.2498 12.0005C21.2498 17.1095 17.1088 21.2505 11.9998 21.2505C6.8908 21.2505 2.7498 17.1095 2.7498 12.0005C2.7498 6.89149 6.8908 2.75049 11.9998 2.75049C17.1088 2.75049 21.2498 6.89149 21.2498 12.0005Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4314 14.9429L11.6614 12.6939V7.84689" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span>dans 3h40"</span>
+                    </div>
+
+                    <div class="modal-vw-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, totam delectus eum,
+                            necessitatibus ipsum consectetur incidunt beatae atque quos dolorum, recusandae architecto
+                            dolor enim dolores. Magni facilis tempore iste reiciendis?</p>
+
+                    </div>
+
+                    <div class="modal-vw-btn">
+                        <button (click)="hiddeModal()">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal-viewer -->
+    <!-- Modal-viewer -->
+
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <div class="wrapper-head padding-5">
+                <div class="w-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="w-icons">
+                    <a routerLink="#" class="icon-h">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a routerLink="#" class="icon-h">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.50083 13.7871V13.5681C3.53295 12.9202 3.7406 12.2925 4.10236 11.7496C4.7045 11.0975 5.1167 10.2983 5.29571 9.43598C5.29571 8.7695 5.29571 8.0935 5.35393 7.42703C5.65469 4.21842 8.82728 2 11.9611 2H12.0387C15.1725 2 18.345 4.21842 18.6555 7.42703C18.7137 8.0935 18.6555 8.7695 18.704 9.43598C18.8854 10.3003 19.2972 11.1019 19.8974 11.7591C20.2618 12.2972 20.4698 12.9227 20.4989 13.5681V13.7776C20.5206 14.648 20.2208 15.4968 19.6548 16.1674C18.907 16.9515 17.8921 17.4393 16.8024 17.5384C13.607 17.8812 10.383 17.8812 7.18762 17.5384C6.09914 17.435 5.08576 16.9479 4.33521 16.1674C3.778 15.4963 3.48224 14.6526 3.50083 13.7871Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M9.55493 20.8518C10.0542 21.4784 10.7874 21.884 11.5922 21.9787C12.3971 22.0734 13.2072 21.8495 13.8433 21.3564C14.0389 21.2106 14.2149 21.041 14.3672 20.8518"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper-illustration padding-5">
+                <div class="illustration">
+                    <div class="illust-title">
+                        <h1>Bonjour, Pelagie !</h1>
+                        <p>Bienvenue chez myWorking je vous souhaite <br> une bonne journée au travail !</p>
+                    </div>
+
+                    <div class="illust-img"></div>
+                </div>
+            </div>
+
+            <div class="statis">
+                <div class="statis-content">
+                    <div class="stat-card  blue-opac">
+                        <div class="stat-head">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.6389 14.3958H17.5906C16.1042 14.3949 14.8994 13.1909 14.8985 11.7045C14.8985 10.218 16.1042 9.01413 17.5906 9.01321H21.6389"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M18.0486 11.6429H17.7369" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.74766 3H16.3911C19.2892 3 21.6388 5.34951 21.6388 8.24766V15.4247C21.6388 18.3229 19.2892 20.6724 16.3911 20.6724H7.74766C4.84951 20.6724 2.5 18.3229 2.5 15.4247V8.24766C2.5 5.34951 4.84951 3 7.74766 3Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.03561 7.53817H12.4346" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="stat-number">
+                                <h1>30000 $</h1>
+                            </div>
+                        </div>
+                        <div class="stat-body">
+                            <div class="stat-label">
+                                <p>Montant total</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card orange-opac">
+                        <div class="stat-head">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.4446 15.7579C21.4446 19.336 19.336 21.4446 15.7579 21.4446H7.97172C4.38443 21.4446 2.27588 19.336 2.27588 15.7579V7.9626C2.27588 4.38444 3.5903 2.27588 7.16846 2.27588H9.16749C9.88576 2.27588 10.5621 2.61406 10.9931 3.18868L11.9059 4.40269C12.3378 4.97618 13.0135 5.31406 13.7315 5.31549H16.5611C20.1484 5.31549 21.472 7.14108 21.472 10.7923L21.4446 15.7579Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.05893 14.4891H16.6524" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="stat-number">
+                                <h1>30</h1>
+                            </div>
+                        </div>
+                        <div class="stat-body">
+                            <div class="stat-label">
+                                <p>Documents</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card sky-opac">
+                        <div class="stat-head">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="stat-number">
+                                <h1>30</h1>
+                            </div>
+                        </div>
+                        <div class="stat-body">
+                            <div class="stat-label">
+                                <p>Rendez-vous</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Charts -->
+            <!-- Charts -->
+
+            <div class="charts-bloc">
+                <div class="title-default padding-5">
+                    <h2>Statistique financiere</h2>
+                </div>
+                <div class="chart-content">
+                    <div class="chart-box">
+                        <ngx-charts-bar-vertical [view]="view" scheme="cool" [results]="single"
+                            [gradient]=" linearGradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="linearShowLegend"
+                            [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+                            [xAxisLabel]="" [yAxisLabel]="" (select)="onSelect($event)">
+                        </ngx-charts-bar-vertical>
+                    </div>
+
+                    <div class="chart-box">
+                        <ngx-charts-pie-chart [view]="view" scheme="cool" [results]="single" [gradient]="gradient"
+                            [legend]="showLegend" [labels]="showLabels" [explodeSlices]="isDoughnut"
+                            (select)="onSelect($event)" (activate)="onActivate($event)"
+                            (deactivate)="onDeactivate($event)" class="charts">
+                        </ngx-charts-pie-chart>
+                    </div>
+                </div>
+            </div>
+            <!-- Charts -->
+            <!-- Charts -->
+            <!-- Meetings -->
+            <!-- Meetings -->
+
+            <div class="meeting-home">
+                <div class="title-default padding-5">
+                    <h2>Mes rendez-vous actuel</h2>
+                </div>
+                <div class="meeting-content">
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/man.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see" (click)="showModalViewer()">Voir</button>
+                        </div>
+                    </div>
+
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/man2.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see" (click)="showModalViewer()">Voir</button>
+                        </div>
+                    </div>
+
+
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/profile.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see">Voir</button>
+                        </div>
+                    </div>
+
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/woman.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see">Voir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meetings -->
+            <!-- Meetings -->
+
+            <!-- Documents -->
+            <!-- Documents -->
+
+            <div class="documents">
+                <div class="title-default padding-5">
+                    <h2>Dernier documents enregistrer</h2>
+                </div>
+                <div class="docs-content">
+                    <div class="doc-card">
+                        <div class="icon-doc">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-label="PDF" role="img" viewBox="0 0 512 512">
+                                <rect width="512" height="512" rx="15%" fill="#c80a0a" />
+                                <path fill="#fff"
+                                    d="M413 302c-9-10-29-15-56-15-16 0-33 2-53 5a252 252 0 0 1-52-69c10-30 17-59 17-81 0-17-6-44-30-44-7 0-13 4-17 10-10 18-6 58 13 100a898 898 0 0 1-50 117c-53 22-88 46-91 65-2 9 4 24 25 24 31 0 65-45 91-91a626 626 0 0 1 92-24c38 33 71 38 87 38 32 0 35-23 24-35zM227 111c8-12 26-8 26 16 0 16-5 42-15 72-18-42-18-75-11-88zM100 391c3-16 33-38 80-57-26 44-52 72-68 72-10 0-13-9-12-15zm197-98a574 574 0 0 0-83 22 453 453 0 0 0 36-84 327 327 0 0 0 47 62zm13 4c32-5 59-4 71-2 29 6 19 41-13 33-23-5-42-18-58-31z" />
+                            </svg>
+                        </div>
+
+                        <div class="doc-body">
+                            <div class="title-doc">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </div>
+                            <div class="icons-doc">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M336,176h40a40,40,0,0,1,40,40V424a40,40,0,0,1-40,40H136a40,40,0,0,1-40-40V216a40,40,0,0,1,40-40h40"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <polyline points="176 272 256 352 336 272"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <line x1="256" y1="48" x2="256" y2="336"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <title>ionicons-v5-i</title>
+                                        <path
+                                            d="M255.66,112c-77.94,0-157.89,45.11-220.83,135.33a16,16,0,0,0-.27,17.77C82.92,340.8,161.8,400,255.66,400,348.5,400,429,340.62,477.45,264.75a16.14,16.14,0,0,0,0-17.47C428.89,172.28,347.8,112,255.66,112Z"
+                                            style="fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <circle cx="256" cy="256" r="80"
+                                            style="fill:none;stroke:currentcolor;stroke-miterlimit:10;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-card">
+                        <div class="icon-doc">
+                            <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <linearGradient id="a" x1="4.494" y1="-1712.086" x2="13.832" y2="-1695.914"
+                                        gradientTransform="translate(0 1720)" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#2368c4" />
+                                        <stop offset="0.5" stop-color="#1a5dbe" />
+                                        <stop offset="1" stop-color="#1146ac" />
+                                    </linearGradient>
+                                </defs>
+                                <title>file_type_word</title>
+                                <path
+                                    d="M28.806,3H9.705A1.192,1.192,0,0,0,8.512,4.191h0V9.5l11.069,3.25L30,9.5V4.191A1.192,1.192,0,0,0,28.806,3Z"
+                                    style="fill:#41a5ee" />
+                                <path d="M30,9.5H8.512V16l11.069,1.95L30,16Z" style="fill:#2b7cd3" />
+                                <path d="M8.512,16v6.5L18.93,23.8,30,22.5V16Z" style="fill:#185abd" />
+                                <path
+                                    d="M9.705,29h19.1A1.192,1.192,0,0,0,30,27.809h0V22.5H8.512v5.309A1.192,1.192,0,0,0,9.705,29Z"
+                                    style="fill:#103f91" />
+                                <path
+                                    d="M16.434,8.2H8.512V24.45h7.922a1.2,1.2,0,0,0,1.194-1.191V9.391A1.2,1.2,0,0,0,16.434,8.2Z"
+                                    style="opacity:0.10000000149011612;isolation:isolate" />
+                                <path
+                                    d="M15.783,8.85H8.512V25.1h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z"
+                                    style="opacity:0.20000000298023224;isolation:isolate" />
+                                <path
+                                    d="M15.783,8.85H8.512V23.8h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z"
+                                    style="opacity:0.20000000298023224;isolation:isolate" />
+                                <path
+                                    d="M15.132,8.85H8.512V23.8h6.62a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.132,8.85Z"
+                                    style="opacity:0.20000000298023224;isolation:isolate" />
+                                <path
+                                    d="M3.194,8.85H15.132a1.193,1.193,0,0,1,1.194,1.191V21.959a1.193,1.193,0,0,1-1.194,1.191H3.194A1.192,1.192,0,0,1,2,21.959V10.041A1.192,1.192,0,0,1,3.194,8.85Z"
+                                    style="fill:url(#a)" />
+                                <path
+                                    d="M6.9,17.988c.023.184.039.344.046.481h.028c.01-.13.032-.287.065-.47s.062-.338.089-.465l1.255-5.407h1.624l1.3,5.326a7.761,7.761,0,0,1,.162,1h.022a7.6,7.6,0,0,1,.135-.975l1.039-5.358h1.477l-1.824,7.748H10.591L9.354,14.742q-.054-.222-.122-.578t-.084-.52H9.127q-.021.189-.084.561c-.042.249-.075.432-.1.552L7.78,19.871H6.024L4.19,12.127h1.5l1.131,5.418A4.469,4.469,0,0,1,6.9,17.988Z"
+                                    style="fill:#fff" />
+                            </svg>
+                        </div>
+
+                        <div class="doc-body">
+                            <div class="title-doc">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </div>
+                            <div class="icons-doc">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M336,176h40a40,40,0,0,1,40,40V424a40,40,0,0,1-40,40H136a40,40,0,0,1-40-40V216a40,40,0,0,1,40-40h40"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <polyline points="176 272 256 352 336 272"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <line x1="256" y1="48" x2="256" y2="336"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <title>ionicons-v5-i</title>
+                                        <path
+                                            d="M255.66,112c-77.94,0-157.89,45.11-220.83,135.33a16,16,0,0,0-.27,17.77C82.92,340.8,161.8,400,255.66,400,348.5,400,429,340.62,477.45,264.75a16.14,16.14,0,0,0,0-17.47C428.89,172.28,347.8,112,255.66,112Z"
+                                            style="fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <circle cx="256" cy="256" r="80"
+                                            style="fill:none;stroke:currentcolor;stroke-miterlimit:10;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="doc-card">
+                        <div class="icon-doc">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-label="PDF" role="img" viewBox="0 0 512 512">
+                                <rect width="512" height="512" rx="15%" fill="#c80a0a" />
+                                <path fill="#fff"
+                                    d="M413 302c-9-10-29-15-56-15-16 0-33 2-53 5a252 252 0 0 1-52-69c10-30 17-59 17-81 0-17-6-44-30-44-7 0-13 4-17 10-10 18-6 58 13 100a898 898 0 0 1-50 117c-53 22-88 46-91 65-2 9 4 24 25 24 31 0 65-45 91-91a626 626 0 0 1 92-24c38 33 71 38 87 38 32 0 35-23 24-35zM227 111c8-12 26-8 26 16 0 16-5 42-15 72-18-42-18-75-11-88zM100 391c3-16 33-38 80-57-26 44-52 72-68 72-10 0-13-9-12-15zm197-98a574 574 0 0 0-83 22 453 453 0 0 0 36-84 327 327 0 0 0 47 62zm13 4c32-5 59-4 71-2 29 6 19 41-13 33-23-5-42-18-58-31z" />
+                            </svg>
+                        </div>
+
+                        <div class="doc-body">
+                            <div class="title-doc">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </div>
+                            <div class="icons-doc">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M336,176h40a40,40,0,0,1,40,40V424a40,40,0,0,1-40,40H136a40,40,0,0,1-40-40V216a40,40,0,0,1,40-40h40"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <polyline points="176 272 256 352 336 272"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <line x1="256" y1="48" x2="256" y2="336"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <title>ionicons-v5-i</title>
+                                        <path
+                                            d="M255.66,112c-77.94,0-157.89,45.11-220.83,135.33a16,16,0,0,0-.27,17.77C82.92,340.8,161.8,400,255.66,400,348.5,400,429,340.62,477.45,264.75a16.14,16.14,0,0,0,0-17.47C428.89,172.28,347.8,112,255.66,112Z"
+                                            style="fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <circle cx="256" cy="256" r="80"
+                                            style="fill:none;stroke:currentcolor;stroke-miterlimit:10;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="icon-doc">
+                            <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <linearGradient id="a" x1="4.494" y1="-1712.086" x2="13.832" y2="-1695.914"
+                                        gradientTransform="translate(0 1720)" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#2368c4" />
+                                        <stop offset="0.5" stop-color="#1a5dbe" />
+                                        <stop offset="1" stop-color="#1146ac" />
+                                    </linearGradient>
+                                </defs>
+                                <title>file_type_word</title>
+                                <path
+                                    d="M28.806,3H9.705A1.192,1.192,0,0,0,8.512,4.191h0V9.5l11.069,3.25L30,9.5V4.191A1.192,1.192,0,0,0,28.806,3Z"
+                                    style="fill:#41a5ee" />
+                                <path d="M30,9.5H8.512V16l11.069,1.95L30,16Z" style="fill:#2b7cd3" />
+                                <path d="M8.512,16v6.5L18.93,23.8,30,22.5V16Z" style="fill:#185abd" />
+                                <path
+                                    d="M9.705,29h19.1A1.192,1.192,0,0,0,30,27.809h0V22.5H8.512v5.309A1.192,1.192,0,0,0,9.705,29Z"
+                                    style="fill:#103f91" />
+                                <path
+                                    d="M16.434,8.2H8.512V24.45h7.922a1.2,1.2,0,0,0,1.194-1.191V9.391A1.2,1.2,0,0,0,16.434,8.2Z"
+                                    style="opacity:0.10000000149011612;isolation:isolate" />
+                                <path
+                                    d="M15.783,8.85H8.512V25.1h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z"
+                                    style="opacity:0.20000000298023224;isolation:isolate" />
+                                <path
+                                    d="M15.783,8.85H8.512V23.8h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z"
+                                    style="opacity:0.20000000298023224;isolation:isolate" />
+                                <path
+                                    d="M15.132,8.85H8.512V23.8h6.62a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.132,8.85Z"
+                                    style="opacity:0.20000000298023224;isolation:isolate" />
+                                <path
+                                    d="M3.194,8.85H15.132a1.193,1.193,0,0,1,1.194,1.191V21.959a1.193,1.193,0,0,1-1.194,1.191H3.194A1.192,1.192,0,0,1,2,21.959V10.041A1.192,1.192,0,0,1,3.194,8.85Z"
+                                    style="fill:url(#a)" />
+                                <path
+                                    d="M6.9,17.988c.023.184.039.344.046.481h.028c.01-.13.032-.287.065-.47s.062-.338.089-.465l1.255-5.407h1.624l1.3,5.326a7.761,7.761,0,0,1,.162,1h.022a7.6,7.6,0,0,1,.135-.975l1.039-5.358h1.477l-1.824,7.748H10.591L9.354,14.742q-.054-.222-.122-.578t-.084-.52H9.127q-.021.189-.084.561c-.042.249-.075.432-.1.552L7.78,19.871H6.024L4.19,12.127h1.5l1.131,5.418A4.469,4.469,0,0,1,6.9,17.988Z"
+                                    style="fill:#fff" />
+                            </svg>
+                        </div>
+
+                        <div class="doc-body">
+                            <div class="title-doc">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </div>
+                            <div class="icons-doc">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M336,176h40a40,40,0,0,1,40,40V424a40,40,0,0,1-40,40H136a40,40,0,0,1-40-40V216a40,40,0,0,1,40-40h40"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <polyline points="176 272 256 352 336 272"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <line x1="256" y1="48" x2="256" y2="336"
+                                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                        viewBox="0 0 512 512">
+                                        <title>ionicons-v5-i</title>
+                                        <path
+                                            d="M255.66,112c-77.94,0-157.89,45.11-220.83,135.33a16,16,0,0,0-.27,17.77C82.92,340.8,161.8,400,255.66,400,348.5,400,429,340.62,477.45,264.75a16.14,16.14,0,0,0,0-17.47C428.89,172.28,347.8,112,255.66,112Z"
+                                            style="fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                        <circle cx="256" cy="256" r="80"
+                                            style="fill:none;stroke:currentcolor;stroke-miterlimit:10;stroke-width:32px" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

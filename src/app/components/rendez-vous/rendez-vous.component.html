@@ -1,0 +1,530 @@
+<div class="body-app">
+    <app-nav></app-nav>
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal" (click)="hiddeModal()">
+        <div class="wrapper-modal" (click)="stop($event)">
+            <div class="wrapper-head">
+                <h2>Ajouter un rendez-vous</h2>
+                <span class="icon" (click)="hiddeModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                        <line x1="368" y1="368" x2="144" y2="144"
+                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                        <line x1="368" y1="144" x2="144" y2="368"
+                            style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                    </svg>
+                </span>
+            </div>
+            <div class="modal-content">
+
+                <div class="wrapper-form">
+                    <div class="group-form">
+                        <label for="title">Titre</label>
+                        <input type="text" name="" id="title">
+                    </div>
+
+                    <div class="group-inputs">
+                        <div class="group-form">
+                            <label for="start">Date et heure du debut</label>
+                            <input type="datetime-local" name="" id="start">
+                        </div>
+
+                        <div class="group-form">
+                            <label for="end">Date et heure de fin</label>
+                            <input type="datetime-local" name="" id="end">
+                        </div>
+                    </div>
+
+                    <div class="group-form">
+                        <label for="text">Déscription</label>
+                        <textarea name="" id="text" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div class="icons-select">
+                        <div class="icons-label">
+                            <span>Selectionnez un icon correspondante</span>
+                        </div>
+                        <div class="icons-content">
+                            <div class="icons-box">
+                                <label class="icon-card">
+                                    <input type="file" name="check" id="" hidden>
+                                    <div class="circle-img">
+                                        <span class="icon-img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M350.54,148.68l-26.62-42.06C318.31,100.08,310.62,96,302,96H210c-8.62,0-16.31,4.08-21.92,10.62l-26.62,42.06C155.85,155.23,148.62,160,140,160H80a32,32,0,0,0-32,32V384a32,32,0,0,0,32,32H432a32,32,0,0,0,32-32V192a32,32,0,0,0-32-32H373C364.35,160,356.15,155.23,350.54,148.68Z"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                                <circle cx="256" cy="272" r="80"
+                                                    style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                                                <polyline points="124 158 124 136 100 136 100 158"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/woman.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/man2.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/man.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/profile.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/man3.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/elderman.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/grandfather.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <label class="icon-card">
+                                    <input type="radio" name="check" id="" hidden>
+                                    <div class="icon-img">
+                                        <img src="../../../assets/ressources/avatar/girl.png" alt="">
+                                    </div>
+                                    <div class="circle-icon-check">
+                                        <span class="check-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                viewBox="0 0 512 512">
+                                                <polyline points="416 128 192 384 96 288"
+                                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-btn">
+                        <button [class.active]="">
+                            <span class="text-btn">Ajouter</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+
+    <!-- Modal-viewer -->
+    <!-- Modal-viewer -->
+    <div class="modal-viewer" (click)="hiddeModal()">
+        <div class="modal-content-viewer" (click)="stop($event)">
+            <div class="modal-vw-profil">
+                <img src="../../../assets/ressources/avatar/man.png" alt="">
+            </div>
+
+            <div class="modal-vw-body">
+                <div class="modal-vw-title">
+                    <h2>Anastacia leanca</h2>
+                    <h3>30 avril 09 : 30 - <span> 10 : 30</span></h3>
+
+                    <div class="times-wait">
+                        <span class="time-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.2498 12.0005C21.2498 17.1095 17.1088 21.2505 11.9998 21.2505C6.8908 21.2505 2.7498 17.1095 2.7498 12.0005C2.7498 6.89149 6.8908 2.75049 11.9998 2.75049C17.1088 2.75049 21.2498 6.89149 21.2498 12.0005Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4314 14.9429L11.6614 12.6939V7.84689" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span>dans 3h40"</span>
+                    </div>
+
+                    <div class="modal-vw-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, totam delectus eum,
+                            necessitatibus ipsum consectetur incidunt beatae atque quos dolorum, recusandae architecto
+                            dolor enim dolores. Magni facilis tempore iste reiciendis?</p>
+                            
+                    </div>
+
+                    <div class="modal-vw-btn">
+                        <button  (click)="hiddeModal()">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal-viewer -->
+    <!-- Modal-viewer -->
+
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <div class="wrapper-head padding-5">
+                <div class="w-title">
+                    <h1>Rendez-vous</h1>
+                </div>
+                <div class="w-icons">
+                    <a routerLink="#" class="icon-h">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a routerLink="#" class="icon-h">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.50083 13.7871V13.5681C3.53295 12.9202 3.7406 12.2925 4.10236 11.7496C4.7045 11.0975 5.1167 10.2983 5.29571 9.43598C5.29571 8.7695 5.29571 8.0935 5.35393 7.42703C5.65469 4.21842 8.82728 2 11.9611 2H12.0387C15.1725 2 18.345 4.21842 18.6555 7.42703C18.7137 8.0935 18.6555 8.7695 18.704 9.43598C18.8854 10.3003 19.2972 11.1019 19.8974 11.7591C20.2618 12.2972 20.4698 12.9227 20.4989 13.5681V13.7776C20.5206 14.648 20.2208 15.4968 19.6548 16.1674C18.907 16.9515 17.8921 17.4393 16.8024 17.5384C13.607 17.8812 10.383 17.8812 7.18762 17.5384C6.09914 17.435 5.08576 16.9479 4.33521 16.1674C3.778 15.4963 3.48224 14.6526 3.50083 13.7871Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M9.55493 20.8518C10.0542 21.4784 10.7874 21.884 11.5922 21.9787C12.3971 22.0734 13.2072 21.8495 13.8433 21.3564C14.0389 21.2106 14.2149 21.041 14.3672 20.8518"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Meetings -->
+            <!-- Meetings -->
+
+            <div class="meeting-home">
+                <div class="meet-select padding-5">
+                    <div class="meet-links">
+                        <a href="#" class="active">Aujourd'huit</a>
+                        <a href="#">Semaines</a>
+                        <a href="#">Mois</a>
+                    </div>
+                    <div class="meet-add" (click)="showModal()">
+                        <button>
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="ic_fluent_calendar_add_24_regular" fill="currentColor" fill-rule="nonzero">
+                                        <path
+                                            d="M17.5,12 C20.5375661,12 23,14.4624339 23,17.5 C23,20.5375661 20.5375661,23 17.5,23 C14.4624339,23 12,20.5375661 12,17.5 C12,14.4624339 14.4624339,12 17.5,12 Z M17.75,3 C19.5449254,3 21,4.45507456 21,6.25 L21.0012092,12.0225923 C20.5377831,11.7257502 20.0341997,11.4861106 19.5004209,11.3136354 L19.5,8.5 L4.5,8.5 L4.5,17.75 C4.5,18.7164983 5.28350169,19.5 6.25,19.5 L11.3136354,19.5004209 C11.4861106,20.0341997 11.7257502,20.5377831 12.0225923,21.0012092 L6.25,21 C4.45507456,21 3,19.5449254 3,17.75 L3,6.25 C3,4.45507456 4.45507456,3 6.25,3 L17.75,3 Z M17.5,14 L17.4101244,14.0080557 C17.2060313,14.0450996 17.0450996,14.2060313 17.0080557,14.4101244 L17,14.5 L17,17 L14.5,17 L14.4101244,17.0080557 C14.2060313,17.0450996 14.0450996,17.2060313 14.0080557,17.4101244 L14,17.5 L14.0080557,17.5898756 C14.0450996,17.7939687 14.2060313,17.9549004 14.4101244,17.9919443 L14.5,18 L17,18 L17,20.5 L17.0080557,20.5898756 C17.0450996,20.7939687 17.2060313,20.9549004 17.4101244,20.9919443 L17.5,21 L17.5898756,20.9919443 C17.7939687,20.9549004 17.9549004,20.7939687 17.9919443,20.5898756 L18,20.5 L18,18 L20.5,18 L20.5898756,17.9919443 C20.7939687,17.9549004 20.9549004,17.7939687 20.9919443,17.5898756 L21,17.5 L20.9919443,17.4101244 C20.9549004,17.2060313 20.7939687,17.0450996 20.5898756,17.0080557 L20.5,17 L18,17 L18,14.5 L17.9919443,14.4101244 C17.9549004,14.2060313 17.7939687,14.0450996 17.5898756,14.0080557 L17.5,14 Z M17.75,4.5 L6.25,4.5 C5.28350169,4.5 4.5,5.28350169 4.5,6.25 L4.5,7 L19.5,7 L19.5,6.25 C19.5,5.28350169 18.7164983,4.5 17.75,4.5 Z"
+                                            id="🎨-Color"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="meeting-content">
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/man.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see" (click)="showModalViewer()">Voir</button>
+                        </div>
+                    </div>
+
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/man2.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see">Voir</button>
+                        </div>
+                    </div>
+
+
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/profile.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see">Voir</button>
+                        </div>
+                    </div>
+
+                    <div class="meet-card">
+                        <div class="meet-content">
+                            <div class="mt-avatar">
+                                <img src="../../../assets/ressources/avatar/woman.png" alt="">
+                            </div>
+                            <div class="mt-body">
+                                <h3>Anastacia leanca</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <div class="mt-date">
+                                    <span class="icon-date">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.09264 9.40427H20.9166" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 13.3097H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 13.3097H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 13.3097H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.4421 17.1962H16.4513" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0046 17.1962H12.0139" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.55789 17.1962H7.56715" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.0437 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.9655 2V5.29078" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.2383 3.57919H7.77096C4.83427 3.57919 3 5.21513 3 8.22222V17.2719C3 20.3262 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22222C21.0092 5.21513 19.1842 3.57919 16.2383 3.57919Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="label">24 Avr, <strong>18:20</strong> - <label>19:20</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meet-btn">
+                            <button class="delete">Supprimer</button>
+                            <button class="see">Voir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meetings -->
+            <!-- Meetings -->
+        </div>
+    </div>
+</div>
