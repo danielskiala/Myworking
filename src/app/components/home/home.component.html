@@ -222,7 +222,7 @@
                 </div>
                 <div class="chart-content">
                     <div class="chart-box">
-                        <ngx-charts-bar-vertical [view]="view" scheme="cool" [results]="single"
+                        <ngx-charts-bar-vertical [view]="" scheme="cool" [results]="single"
                             [gradient]=" linearGradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="linearShowLegend"
                             [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
                             [xAxisLabel]="" [yAxisLabel]="" (select)="onSelect($event)">
@@ -230,7 +230,7 @@
                     </div>
 
                     <div class="chart-box">
-                        <ngx-charts-pie-chart [view]="view" scheme="cool" [results]="single" [gradient]="gradient"
+                        <ngx-charts-pie-chart [view]="" scheme="cool" [results]="single" [gradient]="gradient"
                             [legend]="showLegend" [labels]="showLabels" [explodeSlices]="isDoughnut"
                             (select)="onSelect($event)" (activate)="onActivate($event)"
                             (deactivate)="onDeactivate($event)" class="charts">

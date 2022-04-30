@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     event.stopPropagation();
   }
 
-  view: [number, number] = [380, 380];
+  view:[];
 
 
    // options

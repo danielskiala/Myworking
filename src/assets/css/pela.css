@@ -917,12 +917,11 @@
     box-shadow: var(--shadow);
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .charts-bloc .chart-content .chart-box svg {
     width: 100% !important;
-    height: 100% !important;
+    height: 350px !important;
     font-family: "Montserrat-Regular";
   }
 
